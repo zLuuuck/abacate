@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./abacate.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>Contabilidade do Abacate</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Contabilidade do Abacate</h2>
+            <a href="#titulo-inferior" class="link-cabecalho">Quem é o Abacate?</a>
+            <a href="#titulo-meio" class="link-cabecalho">Serviços do Abacate</>
+            <a class="link-cabecalho" onclick="chamaOAbacate()">Contate o Abacate</a>
+        </div>
+
+        <h1>Contabilidade do Abacate</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/lucas.toterol.rodrigues@gmail.com" method="POST">
+            <h3 class="titulo-form">Entre em contato com o Abacate!</h3>
+            <label>
+                Nome na lingua dos Abacates
+                <input type="text" name="nome" placeholder="Digite seu Nome, Abacate!" required />
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="ex: abacate.supremo@abacate.com" required />
+            </label>
+
+            <label>
+                WhatsApp
+                <input type="tel" name="telefone" placeholder="Digite seu Whatsapp" />
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual sua dúvida? Em Abacatense, por favor!"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos serviços "Abacatenses"</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Contabilidade Completa para Abacates!</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos do seu negócio e do seu Abacate!</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cuidamos de você e do ABACATE!</h3>
+            <ul>
+                <li>Primeiro item da lista</li>
+                <li>Segundo item da lista</li>
+                <li>Terceiro item da lista</li>
+                <li>Quarto item da lista</li>
+                <li>Quinto item da lista</li>
+                <li>Sexto item da lista</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior">
+            Estamos presente no mercado de abacates há mais de 4 décadas auxiliando nossos clientes Abacates, nacionais
+            e internacionais que já
+            atuam ou desejam abrir seus negócios e ingressar no Brasil do Abacate.
+
+            Assessoramos investidores que queiram prospectar seus negócios no Brasil do Abacate e investidores
+            (“Abacatenses”)
+            interessados em fazer negócios em outros países recheados de abacates.
+            Oferecemos “backoffice” e muito Abacate nas áreas Financeiras, Recursos Humanos, Tributária e Contabilidade,
+            Loja de Abacates e inclusive a
+            abertura, legalização e regularização de empresas e negócios.
+
+            Com pesquisas de mercado de abacates, montamos toda estrutura organizacional, ambiente operacional e
+            logística de suas
+            atividades Abacatenses, com profissionais qualificados em abacates, competentes e continuamente treinados.
+
+            Somos especialistas em empresas tributadas pelo LUCRO REAL e Contabilidade em IFRS. Assim, o Planejamento
+            das
+            Operações e suas consequências tributárias passam a ser condições de competitividade, inclusive sugerindo
+            incorporação ou desmembramento de atividades.
+            E não esqueça, NÓS SOMOS OS ABACATES!
+        </p>
+    </div>
+</body>
+
+<script>
+
+    let formulario = document.getElementById("formulario-contato")
+
+    function chamaOAbacate() {
+        formulario.className = "mostrar-formulario"
+    }
+
+</script>
+
+</html>
